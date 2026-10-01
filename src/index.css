@@ -1,0 +1,85 @@
+/* ═══════════════════════════════════════════════
+   Global Reset & Design Tokens
+   Apple-inspired dark/light portfolio
+═══════════════════════════════════════════════ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+img, video { display: block; max-width: 100%; }
+ul { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; cursor: pointer; border: none; background: none; }
+
+:root {
+  --font: "Inter", system-ui, -apple-system, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+/* ── Dark (default) ── */
+:root,
+[data-theme="dark"] {
+  --bg:           #000;
+  --bg-elevated:  #0d0d0d;
+  --surface:      #1c1c1e;
+  --glass:        rgba(0, 0, 0, 0.72);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --border:       rgba(255, 255, 255, 0.06);
+  --text:         #f5f5f7;
+  --text-2:       #a1a1a6;
+  --text-3:       #6e6e73;
+  --accent:       #2997ff;
+  --accent-hover: #0077ed;
+  --card-bg:      rgba(28, 28, 30, 0.6);
+  --card-border:  rgba(255, 255, 255, 0.06);
+  --tag-bg:       rgba(255, 255, 255, 0.06);
+  --gradient-hero: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(41, 151, 255, 0.15), transparent);
+  color-scheme: dark;
+}
+
+/* ── Light ── */
+[data-theme="light"] {
+  --bg:           #fbfbfd;
+  --bg-elevated:  #fff;
+  --surface:      #f5f5f7;
+  --glass:        rgba(251, 251, 253, 0.72);
+  --glass-border: rgba(0, 0, 0, 0.06);
+  --border:       rgba(0, 0, 0, 0.06);
+  --text:         #1d1d1f;
+  --text-2:       #6e6e73;
+  --text-3:       #86868b;
+  --accent:       #0066cc;
+  --accent-hover: #004499;
+  --card-bg:      rgba(255, 255, 255, 0.6);
+  --card-border:  rgba(0, 0, 0, 0.06);
+  --tag-bg:       rgba(0, 0, 0, 0.04);
+  --gradient-hero: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 102, 204, 0.08), transparent);
+  color-scheme: light;
+}
+
+html {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.47;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--bg);
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
