@@ -37,7 +37,8 @@ export default function Nav({ theme, toggleTheme }) {
         <nav className={styles.links}>
           <a href="#projects">Work</a>
           <a href="#stack">Stack</a>
-          <a href="https://github.com/AbhigyanD" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://github.com/AbhigyanD" target="_blank" rel="noopener noreferrer" className={styles.external}>GitHub</a>
+          <a href="https://www.linkedin.com/in/deyabhig/" target="_blank" rel="noopener noreferrer" className={styles.external}>LinkedIn</a>
           <a href="mailto:abhigyandey2@gmail.com">Contact</a>
           <button
             className={styles.themeBtn}

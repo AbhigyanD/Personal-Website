@@ -66,3 +66,8 @@
   .links { gap: 18px; }
   .links a { font-size: 0.6875rem; }
 }
+
+/* GitHub and LinkedIn are also in the hero and footer; drop them before the nav overflows */
+@media (max-width: 420px) {
+  .external { display: none; }
+}

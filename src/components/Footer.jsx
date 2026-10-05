@@ -14,6 +14,7 @@ export default function Footer() {
           <span className={styles.copy}>Abhigyan Dey</span>
           <nav className={styles.links}>
             <a href="https://github.com/AbhigyanD" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/deyabhig/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="mailto:abhigyandey2@gmail.com">Email</a>
           </nav>
         </div>

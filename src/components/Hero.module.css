@@ -36,8 +36,11 @@
   font-size: clamp(3rem, 8vw, 5.5rem);
   font-weight: 700;
   letter-spacing: -0.04em;
-  line-height: 1.0;
-  margin-bottom: 24px;
+  line-height: 1.05;
+  /* background-clip: text only paints inside the box; pad it so descenders
+     (g, y) and the overhang from negative tracking aren't clipped */
+  padding: 0 0.06em 0.14em;
+  margin-bottom: 12px;
   background: linear-gradient(to bottom, var(--text), var(--text-2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -67,13 +70,18 @@
   border-radius: 980px;
   font-size: 0.9375rem;
   font-weight: 500;
-  background: var(--accent);
+  background: var(--accent-solid);
   color: #fff;
   transition: background 0.2s, transform 0.2s;
 }
 .primary:hover {
-  background: var(--accent-hover);
+  background: var(--accent-solid-hover);
   transform: scale(1.03);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
 }
 
 .secondary {

@@ -47,7 +47,7 @@ export default function Projects() {
           <p className={styles.eyebrow}>Selected Work</p>
           <h2 className={styles.heading}>Projects I've built.</h2>
           <p className={styles.subheading}>
-            Agent systems, retrieval pipelines, audio ML, and full-stack apps.
+            Agent systems, retrieval pipelines, audio ML, and low-latency C++.
           </p>
         </motion.div>
 

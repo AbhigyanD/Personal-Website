@@ -32,7 +32,8 @@
   transition: background 0.2s, color 0.2s;
 }
 .email:hover {
-  background: var(--accent);
+  background: var(--accent-solid);
+  border-color: var(--accent-solid);
   color: #fff;
 }
 

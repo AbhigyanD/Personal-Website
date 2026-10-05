@@ -38,15 +38,26 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.6 }}
         >
           <a href="#projects" className={styles.primary}>See my work</a>
-          <a
-            href="https://github.com/AbhigyanD"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            GitHub
-            <span className={styles.arrow}>→</span>
-          </a>
+          <div className={styles.socials}>
+            <a
+              href="https://github.com/AbhigyanD"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.secondary}
+            >
+              GitHub
+              <span className={styles.arrow}>→</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/deyabhig/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.secondary}
+            >
+              LinkedIn
+              <span className={styles.arrow}>→</span>
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>
