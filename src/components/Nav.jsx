@@ -39,6 +39,7 @@ export default function Nav({ theme, toggleTheme }) {
           <a href="#stack">Stack</a>
           <a href="https://github.com/AbhigyanD" target="_blank" rel="noopener noreferrer" className={styles.external}>GitHub</a>
           <a href="https://www.linkedin.com/in/deyabhig/" target="_blank" rel="noopener noreferrer" className={styles.external}>LinkedIn</a>
+          <a href={`${import.meta.env.BASE_URL}resume.pdf`} target="_blank" rel="noopener noreferrer">Résumé</a>
           <a href="mailto:abhigyandey2@gmail.com">Contact</a>
           <button
             className={styles.themeBtn}

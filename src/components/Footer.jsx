@@ -15,6 +15,7 @@ export default function Footer() {
           <nav className={styles.links}>
             <a href="https://github.com/AbhigyanD" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://www.linkedin.com/in/deyabhig/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href={`${import.meta.env.BASE_URL}resume.pdf`} target="_blank" rel="noopener noreferrer">Résumé</a>
             <a href="mailto:abhigyandey2@gmail.com">Email</a>
           </nav>
         </div>

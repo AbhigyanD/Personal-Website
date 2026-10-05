@@ -33,8 +33,8 @@ export const projects = [
     title: 'Agentic Dating',
     href: 'https://github.com/AbhigyanD/Dating_Agent',
     description:
-      'Each person gets an agent that reads their public LinkedIn and Instagram and builds a profile of needs, interests and values, citing the exact quote behind each one. Agents then go on simulated three-round dates with every other agent and each scores the match for its own person, producing a personal ranking with every conversation readable.',
-    tags: ['Python', 'Multi-agent', 'LLM Agents'],
+      'Each person gets an agent that reads their public LinkedIn and Instagram and builds a profile of needs, interests and values, citing the exact quote behind each one. Agents then go on simulated three-round dates with every other agent and each scores the match for its own person, producing a personal ranking with every conversation readable. Launched live with 20 real users.',
+    tags: ['Node.js', 'Claude API', 'Multi-agent'],
   },
   {
     title: 'Financial RAG',

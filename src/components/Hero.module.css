@@ -18,6 +18,7 @@
 .content {
   position: relative;
   text-align: center;
+  width: 100%;
   max-width: 720px;
   padding: 0 clamp(20px, 5vw, 44px);
 }
@@ -81,6 +82,7 @@
 
 .socials {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -101,3 +103,7 @@
   transition: transform 0.2s;
 }
 .secondary:hover .arrow { transform: translateX(3px); }
+
+@media (max-width: 480px) {
+  .secondary { padding: 12px 14px; }
+}

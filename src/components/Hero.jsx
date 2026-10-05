@@ -40,6 +40,15 @@ export default function Hero() {
           <a href="#projects" className={styles.primary}>See my work</a>
           <div className={styles.socials}>
             <a
+              href={`${import.meta.env.BASE_URL}resume.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.secondary}
+            >
+              Résumé
+              <span className={styles.arrow}>→</span>
+            </a>
+            <a
               href="https://github.com/AbhigyanD"
               target="_blank"
               rel="noopener noreferrer"
