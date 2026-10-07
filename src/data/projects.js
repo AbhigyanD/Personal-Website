@@ -17,7 +17,7 @@ export const projects = [
   },
   {
     title: 'NanoEX HFT System',
-    href: 'https://github.com/AbhigyanD/HFT_System',
+    href: 'https://abhigyand.github.io/HFT_System/',
     description:
       'Multi-threaded trading system in C++17: lock-free data structures, a work-stealing thread pool, an order matching engine and pre-trade risk checks. A momentum strategy runs on RSI, momentum and MACD signals, with a live GUI for prices, signals and latency.',
     tags: ['C++17', 'Concurrency', 'Lock-free', 'Trading Systems'],
@@ -31,7 +31,7 @@ export const projects = [
   },
   {
     title: 'Agentic Dating',
-    href: 'https://github.com/AbhigyanD/Dating_Agent',
+    href: 'https://abhigyand.github.io/Dating_Agent/',
     description:
       'Each person gets an agent that reads their public LinkedIn and Instagram and builds a profile of needs, interests and values, citing the exact quote behind each one. Agents then go on simulated three-round dates with every other agent and each scores the match for its own person, producing a personal ranking with every conversation readable. Launched live with 20 real users.',
     tags: ['Node.js', 'Claude API', 'Multi-agent'],
